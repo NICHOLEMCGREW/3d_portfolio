@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import SocialIcon1 from '../assets/img/social-icon1.svg';
+import SocialIcon2 from '../assets/img/social-icon2.svg';
+import SocialIcon3 from '../assets/img/social-icon3.svg';
+
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
@@ -49,7 +53,7 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-10 ml-80'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -76,7 +80,7 @@ const Navbar = () => {
               !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+            <ul className='list-none flex space-x-4 ml-auto'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
@@ -94,6 +98,29 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+
+{/* "Let's Connect" Button with Transparent White Border */}
+<Link
+  to='/connect'
+  className='text-white text-[18px] font-medium cursor-pointer hover:text-white relative'
+  onClick={() => {
+    setToggle(false);
+    setActive("Let's Connect");
+  }}
+>
+  <span className='border-white border-opacity-50 border-2 p-3 '>
+    Let's Connect
+  </span>
+</Link>
+
+{/* Social Media Icons Section */}
+<div className="flex items-center gap-5">
+  <a href='#' target='_blank' rel='noopener noreferrer'><img src={SocialIcon1} alt='Social Icon 1' className='w-6 h-6 object-contain' style={{ width: '24px' }} /></a>
+  <a href='#' target='_blank' rel='noopener noreferrer'><img src={SocialIcon2} alt='Social Icon 2' className='w-6 h-6 object-contain' style={{ width: '24px' }} /></a>
+  <a href='#' target='_blank' rel='noopener noreferrer'><img src={SocialIcon3} alt='Social Icon 3' className='w-6 h-6 object-contain' style={{ width: '24px' }} /></a>
+  {/* Add more social icons as needed */}
+</div>
+
       </div>
     </nav>
   );

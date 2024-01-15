@@ -202,3 +202,18 @@
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
+
+/* Add or update the .connect-box class in your external stylesheet (styles.css or similar) */
+.connect-box {
+  background-color: transparent; /* Update to have a transparent background */
+  border: 1px solid white; /* Add a border for visibility, adjust as needed */
+  padding: 10px; /* Adjust padding as needed */
+  /* border-radius: 8px; Adjust border-radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+  display: inline-block; /* Ensure the box only takes the space it needs */
+}
+
+/* Apply the .connect-box class to the "Let's Connect" link in the mobile menu */
+li.connect-box a {
+  color: white; /* Set text color to white */
+}

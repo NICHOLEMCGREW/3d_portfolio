@@ -31,11 +31,13 @@ const Ball = (props) => {
           scale={1}
           map={decal}
           flatShading
+          
         />
       </mesh>
     </Float>
   );
 };
+
 
 const BallCanvas = ({ icon }) => {
   return (
