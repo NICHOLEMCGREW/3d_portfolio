@@ -25,10 +25,15 @@ import {
   threejs,
 } from "../assets";
 
+import linkedin from '../assets/socials/linkedin.svg';
+import github from '../assets/socials/github.svg';
+import twitter from '../assets/socials/twitter.svg';
+import instagram from '../assets/socials/instagram.svg';
+
 export const navLinks = [
   {
-    id: "Home",
-    title: "Home",
+    id: "About",
+    title: "About",
   },
   {
     id: "Skills",
@@ -38,14 +43,36 @@ export const navLinks = [
     id: "Projects",
     title: "Projects",
   },
-  // {
-  //   id: "Let's Connect",
-  //   title: "Let's Connect",
-  //   className: "connect-box"
-  // },
-  
 ];
 
+export const letsConnectLink = {
+  id: "connect-box",
+  title: "Let's Connect",
+  className: "connect-box",
+};
+
+export const socials = [
+  {
+    name: "linkedin",
+    icon: linkedin,
+    link: 'https://www.linkedin.com/in/nichole-mcgrew/',
+  },
+  {
+    name: "github",
+    icon: github,
+    link: 'https://github.com/NICHOLEMCGREW',
+  },
+  {
+    name: "twitter",
+    icon: twitter,
+    link: 'https://twitter.com/NicholeMcGrew',
+  },
+  {
+    name: "instagram",
+    icon: instagram,
+    link: 'https://www.instagram.com/insight.photos/',
+  },
+];
 
 
 const services = [
