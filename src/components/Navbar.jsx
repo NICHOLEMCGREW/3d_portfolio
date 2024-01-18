@@ -43,7 +43,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
+          <img src={logo} alt='logo' className='w-12 h-9 object-contain' />
         </Link>
 
         {/* Navigation items for large screens */}
@@ -56,7 +56,7 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <HashLink to={`#${nav.id}`}>{nav.title}</HashLink>
+               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
@@ -92,11 +92,12 @@ const Navbar = () => {
             >
               <Link
                 to={`/${letsConnectLink.id}`}
-                className={`connect-box relative ${letsConnectLink.className || ''} border-white border-opacity-50 border-2 p-4 text-white transition duration-300 ease-in-out`}
+                className={`contact relative ${letsConnectLink.className || ''} border-white border-opacity-50 border-2 p-4 text-white transition duration-300 ease-in-out`}
                 onClick={() => {
                   setToggle(false);
                   setActive(letsConnectLink.title);
                 }}
+                
               >
                 {letsConnectLink.title}
                 <span className="before-transform transition-transform duration-300 ease-in-out"></span>
@@ -169,7 +170,7 @@ const Navbar = () => {
               >
                 <Link
                   to={`/${letsConnectLink.id}`}
-                  className={`connect-box relative ${letsConnectLink.className || ''} text-white transition duration-300 ease-in-out`}
+                  className={`contact relative ${letsConnectLink.className || ''} text-white transition duration-300 ease-in-out`}
                   onClick={() => {
                     setToggle(false);
                     setActive(letsConnectLink.title);

@@ -203,8 +203,8 @@
   }
 }
 
-/* Add or update the .connect-box class in your external stylesheet (styles.css or similar) */
-.connect-box {
+/* Add or update the .contact class in your external stylesheet (styles.css or similar) */
+.contact {
   background-color: transparent; /* Update to have a transparent background */
   border: 1px solid white; /* Add a border for visibility, adjust as needed */
   /* padding: 15px; Adjust padding as needed */
@@ -214,13 +214,13 @@
   
 }
 
-/* Apply the .connect-box class to the "Let's Connect" link in the mobile menu */
-li.connect-box a {
+/* Apply the .contact class to the "Let's Connect" link in the mobile menu */
+li.contact a {
   
   color: white; /* Set text color to white */
 }
 
-.connect-box {
+.contact {
   
   font-weight: 700;
   color: #fff;
@@ -232,10 +232,10 @@ li.connect-box a {
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
 }
-.connect-box span {
+.contact span {
   z-index: 1;
 }
-.connect-box::before {
+.contact::before {
   content: "";
   width: 0%;
   height: 100%;
@@ -246,10 +246,10 @@ li.connect-box a {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
-.connect-box:hover {
+.contact:hover {
   color: #121212;
 }
-.connect-box:hover::before {
+.contact:hover::before {
 	content: "";
 	width: 100%;
 	height: 100%;

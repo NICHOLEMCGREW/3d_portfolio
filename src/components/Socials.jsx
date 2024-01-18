@@ -15,4 +15,4 @@ const Socials = () => {
   );
 };
 
-export default SectionWrapper(Tech, "");
+export default SectionWrapper(Skills, "");
