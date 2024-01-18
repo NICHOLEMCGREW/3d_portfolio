@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks, letsConnectLink, socials } from "../constants";
@@ -44,10 +44,6 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-12 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Nichole &nbsp;
-            <span className='sm:block hidden'> McGrew</span>
-          </p>
         </Link>
 
         {/* Navigation items for large screens */}
@@ -60,7 +56,9 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-               <a href={`#${nav.id}`}>{nav.title}</a>
+              <HashLink smooth to={`#${nav.id}`}>
+                {nav.title}
+              </HashLink>
             </li>
           ))}
         </ul>
@@ -94,18 +92,18 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer list-none connect vvd`}
               onClick={() => setActive(letsConnectLink.title)}
             >
-              <Link
-                to={`/${letsConnectLink.id}`}
+              <HashLink
+                smooth
+                to={`/#contact`}
                 className={`contact relative ${letsConnectLink.className || ''} border-white border-opacity-50 border-2 p-4 text-white transition duration-300 ease-in-out`}
                 onClick={() => {
                   setToggle(false);
                   setActive(letsConnectLink.title);
                 }}
-                
               >
                 {letsConnectLink.title}
                 <span className="before-transform transition-transform duration-300 ease-in-out"></span>
-              </Link>
+              </HashLink>
             </li>
           </div>
         </div>
@@ -138,7 +136,7 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <HashLink to={`#${nav.id}`}>{nav.title}</HashLink>
+                  <HashLink smooth to={`#${nav.id}`}>{nav.title}</HashLink>
                 </li>
               ))}
               
@@ -172,8 +170,9 @@ const Navbar = () => {
                   setActive(letsConnectLink.title);
                 }}
               >
-                <Link
-                  to={`/${letsConnectLink.id}`}
+                <HashLink
+                  smooth
+                  to={`/#contact`}
                   className={`contact relative ${letsConnectLink.className || ''} text-white transition duration-300 ease-in-out`}
                   onClick={() => {
                     setToggle(false);
@@ -182,7 +181,7 @@ const Navbar = () => {
                 >
                   {letsConnectLink.title}
                   <span className="before-transform transition-transform duration-300 ease-in-out"></span>
-                </Link>
+                </HashLink>
               </li>
             </ul>
           </div>
