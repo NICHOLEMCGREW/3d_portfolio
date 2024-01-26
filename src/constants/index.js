@@ -161,11 +161,7 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/",
-<<<<<<< HEAD
     source_deploy_link: ""
-=======
-    source_deploy_link: "https://rose-salon.netlify.app"
->>>>>>> 102c4978ece880848e3e326fd586aec50c27ad30
   },
   {
     name: "Job IT",
