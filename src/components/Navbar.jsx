@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
+import { FiSun } from "react-icons/fi";
+import { MdOutlineNightlight } from "react-icons/md";
 
 import { styles } from "../styles";
 import { navLinks, letsConnectLink, socials } from "../constants";
@@ -10,6 +12,7 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +28,11 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const toggleTheme = () => {
+    setDarkMode((prev) => !prev);
+    // You can add more logic here to toggle between light and dark mode
+  };
 
   return (
     <nav
@@ -44,9 +52,12 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-12 h-9 object-contain' />
+          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+            Nichole &nbsp;
+            <span className='sm:block hidden sm:block hidden'> McGrew</span>
+          </p>
         </Link>
 
-        {/* Navigation items for large screens */}
         <ul className='list-none hidden md:flex flex-row gap-8 ml-auto font-normal text-white tracking-[0.8px] text-[18px]'>
           {navLinks.map((nav) => (
             <li
@@ -64,8 +75,8 @@ const Navbar = () => {
         </ul>
 
         <div className="flex items-center gap-4 ml-9">
-          {/* Social Media Icons Section for large screens */}
           <div className="socials flex items-center gap-2 hidden lg:flex">
+            {/* Social Media Icons Section for large screens */}
             {socials.map((social) => (
               <a
                 key={social.name}
@@ -84,7 +95,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Let's Connect button from letsConnectLink for large screens */}
+
           <div className="hidden md:block">
             <li
               className={`${
@@ -108,8 +119,8 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Hamburger menu for medium and small screens */}
         <div className='md:hidden flex flex-1 justify-end items-center'>
+          {/* Hamburger menu for medium and small screens */}
           <img
             src={toggle ? close : menu}
             alt='menu'
@@ -124,7 +135,6 @@ const Navbar = () => {
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
-              {/* Navigation items for medium and small screens */}
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
@@ -139,9 +149,9 @@ const Navbar = () => {
                   <HashLink smooth to={`#${nav.id}`}>{nav.title}</HashLink>
                 </li>
               ))}
-              
-              {/* Social Media Icons Section for small screens */}
+
               <div className="socials flex items-center gap-2 md:hidden">
+                {/* Social Media Icons Section for small screens */}
                 {socials.map((social) => (
                   <a
                     key={social.name}
@@ -160,7 +170,7 @@ const Navbar = () => {
                   </a>
                 ))}
               </div>
-              {/* Let's Connect button from letsConnectLink for small screens */}
+
               <li
                 className={`${
                   active === letsConnectLink.title ? "text-white" : "text-secondary"
