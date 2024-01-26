@@ -1,8 +1,10 @@
 import {
-  mobile,
+  react,
   backend,
-  creator,
+  full,
+  // creator,
   web,
+  ux,
   javascript,
   typescript,
   html,
@@ -15,10 +17,6 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
@@ -80,16 +78,16 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "React Developer",
+    icon: react,
   },
   {
     title: "Backend Developer",
-    icon: backend,
+    icon: full,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "UI/UX Designer",
+    icon: ux,
   },
 ];
 
@@ -114,10 +112,7 @@ const skills = [
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -141,10 +136,6 @@ const skills = [
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
@@ -170,6 +161,7 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/",
+    source_deploy_link: "https://rose-salon.netlify.app"
   },
   {
     name: "Job IT",
@@ -191,6 +183,7 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/",
+    source_deploy_link: "https://rose-salon.netlify.app"
   },
   {
     name: "Trip Guide",
@@ -212,6 +205,7 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/",
+    source_deploy_link: "https://rose-salon.netlify.app"
   },
 ];
 

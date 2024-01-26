@@ -1,7 +1,10 @@
 import logo from "./logo.svg";
 import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
+import full from "./full.png";
+// import creator from "./creator.png";
+import ux from "./ux.png";
+// import mobile from "./mobile.png";
+import react from "./react.png";
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
@@ -32,9 +35,11 @@ import tripguide from "./tripguide.png";
 
 export {
   logo,
+  full, 
   backend,
-  creator,
-  mobile,
+  react,
+  ux,
+  // mobile,
   web,
   github,
   menu,
