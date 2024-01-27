@@ -30,6 +30,10 @@ import instagram from '../assets/socials/instagram.svg';
 
 export const navLinks = [
   {
+    id: "Home",
+    title: "Home",
+  },
+  {
     id: "about",
     title: "About",
   },

@@ -74,7 +74,8 @@ const Contact = () => {
         className='flex-[0.75] bg- p-8 rounded-2xl'
       >
       
-        <h3 className={styles.sectionHeadText}>Get in touch</h3>
+      <p className={styles.sectionSubText}>Get in touch</p>
+        <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
           ref={formRef}
@@ -89,7 +90,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="Enter your name"
-              className='bg-[#915EFF] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-[#915EFF] bg-opacity-45 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
@@ -100,7 +101,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="Enter your email address?"
-              className='bg-[#915EFF] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-[#915EFF] bg-opacity-45 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
@@ -110,8 +111,8 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='Enter message'
-              className='bg-[#915EFF] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              placeholder='Enter a message'
+              className='bg-[#915EFF] bg-opacity-45 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
 

@@ -1,53 +1,82 @@
+import React from "react";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-scroll"; // Import Link from react-scroll
+import Image from "../assets/img/hero.png";
+import Resume from "../assets/resume.pdf";
 
-import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
-
-const Hero = () => {
+const HeroSection = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
-      <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
-
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Nichole</span>
+    <section className="h-screen flex items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-12 mx-auto w-full">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="col-span-8 place-self-center text-center sm:text-left justify-self-start px-20"
+        >
+          <h1 className="text-white mb-4 text-3xl sm:text-4xl lg:text-6xl lg:leading-normal font-extrabold">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+              Hello, I&apos;m Nichole{" "}
+            </span>
+            <br />
+            <TypeAnimation
+              sequence={[
+                "Full Stack Developer",
+                1000,
+                "React Developer",
+                1000,
+                "UI/UX Designer",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
           </h1>
-          <p className={`${styles.heroSubText} mt-2 mr-80 text-white-100 text-center`}>
-  Fullstack Developer <br className='sm:block hidden' /> 
-  &nbsp;&amp;&nbsp;
-  <br className='sm:block hidden' />
-  UI/UX Designer
-</p>
-
-        </div>
-      </div>
-      <ComputersCanvas />
-
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            voluptuous.
+          </p>
+          <div>
+            <Link
+              to="contact" // Replace with the correct ID of your contact section
+              smooth={true}
+              duration={500}
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-purple-500 to-pink-500 hover:bg-slate-200 text-white"
+            >
+              Hire Me
+            </Link>
+            <a
+              href={Resume}
+              download="Resume"
+              target="_blank"
+              rel="noreferrer"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3"
+            >
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                Download CV
+              </span>
+            </a>
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="col-span-4 place-self-center mt-4 lg:mt-0"
+        >
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative overflow-hidden">
+            <img
+              src={Image}
+              alt="hero image"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-full h-full object-cover"
             />
           </div>
-        </a>
+        </motion.div>
       </div>
     </section>
   );
 };
 
-export default Hero;
+export default HeroSection;

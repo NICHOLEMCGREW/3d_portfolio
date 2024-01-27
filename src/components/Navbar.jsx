@@ -12,7 +12,7 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,10 +29,10 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const toggleTheme = () => {
-    setDarkMode((prev) => !prev);
-    // You can add more logic here to toggle between light and dark mode
-  };
+  // const toggleTheme = () => {
+  //   setDarkMode((prev) => !prev);
+    
+  // };
 
   return (
     <nav
@@ -52,10 +52,10 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-12 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+          {/* <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Nichole &nbsp;
-            <span className='sm:block hidden sm:block hidden'> McGrew</span>
-          </p>
+            <span className='sm:block md:hidden hidden'> McGrew</span>
+          </p> */}
         </Link>
 
         <ul className='list-none hidden md:flex flex-row gap-8 ml-auto font-normal text-white tracking-[0.8px] text-[18px]'>
@@ -74,7 +74,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="flex items-center gap-4 ml-9">
+        <div className="flex items-center gap-4 ml-10">
           <div className="socials flex items-center gap-2 hidden lg:flex">
             {/* Social Media Icons Section for large screens */}
             {socials.map((social) => (
@@ -96,11 +96,11 @@ const Navbar = () => {
           </div>
 
 
-          <div className="hidden md:block">
+          <div className="hidden md:block ">
             <li
               className={`${
                 active === letsConnectLink.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer list-none connect vvd`}
+              } hover:text-white text-[18px] font-medium cursor-pointer list-none connect vvd ml-7`}
               onClick={() => setActive(letsConnectLink.title)}
             >
               <HashLink
@@ -119,7 +119,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className='md:hidden flex flex-1 justify-end items-center'>
+        <div className='lg:hidden flex flex-1 justify-end items-center'>
           {/* Hamburger menu for medium and small screens */}
           <img
             src={toggle ? close : menu}
