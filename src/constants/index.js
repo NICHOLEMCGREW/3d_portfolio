@@ -29,10 +29,10 @@ import twitter from '../assets/socials/twitter.svg';
 import instagram from '../assets/socials/instagram.svg';
 
 export const navLinks = [
-  {
-    id: "Home",
-    title: "Home",
-  },
+  // {
+  //   id: "Home",
+  //   title: "Home",
+  // },
   {
     id: "about",
     title: "About",
@@ -69,11 +69,11 @@ export const socials = [
     icon: twitter,
     link: 'https://twitter.com/NicholeMcGrew',
   },
-  {
-    name: "instagram",
-    icon: instagram,
-    link: 'https://www.instagram.com/insight.photos/',
-  },
+  // {
+  //   name: "instagram",
+  //   icon: instagram,
+  //   link: 'https://www.instagram.com/insight.photos/',
+  // },
 ];
 
 const services = [
