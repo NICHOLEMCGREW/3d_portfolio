@@ -36,10 +36,10 @@ const HeroSection = () => {
               />
             </h1>
           </div>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous. */}
-          </p>
+          {/* <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            voluptuous.
+          </p> */}
           <div>
             <Link
               to="contact" // Replace with the correct ID of your contact section
