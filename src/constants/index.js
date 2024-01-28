@@ -29,10 +29,10 @@ import twitter from '../assets/socials/twitter.svg';
 import instagram from '../assets/socials/instagram.svg';
 
 export const navLinks = [
-  {
-    id: "Home",
-    title: "Home",
-  },
+  // {
+  //   id: "home",
+  //   title: "Home",
+  // },
   {
     id: "about",
     title: "About",

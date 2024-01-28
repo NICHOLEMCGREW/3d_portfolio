@@ -52,10 +52,6 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-12 h-9 object-contain' />
-          {/* <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Nichole &nbsp;
-            <span className='sm:block md:hidden hidden'> McGrew</span>
-          </p> */}
         </Link>
 
         <ul className='list-none hidden md:flex flex-row gap-8 ml-auto font-normal text-white tracking-[0.8px] text-[18px]'>
@@ -67,7 +63,11 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <HashLink smooth to={`#${nav.id}`}>
+              <HashLink
+                smooth
+                to={`#${nav.id}`}
+                className='no-underline'
+              >
                 {nav.title}
               </HashLink>
             </li>
@@ -94,7 +94,6 @@ const Navbar = () => {
               </a>
             ))}
           </div>
-
 
           <div className="hidden md:block ">
             <li
