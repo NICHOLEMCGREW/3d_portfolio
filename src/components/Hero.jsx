@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { Link } from "react-scroll"; // Import Link from react-scroll
+import { Link } from "react-scroll";
 import Image from "../assets/img/hero.png";
 import Resume from "../assets/resume.pdf";
 
@@ -15,28 +15,30 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start px-20"
         >
-          <h1 className="text-white mb-4 text-3xl sm:text-4xl lg:text-6xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-              Hello, I&apos;m Nichole{" "}
-            </span>
-            <br />
-            <TypeAnimation
-              sequence={[
-                "Full Stack Developer",
-                1000,
-                "React Developer",
-                1000,
-                "UI/UX Designer",
-                1000,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
-          </h1>
+          <div style={{ height: "150px", overflow: "hidden" }}>
+            <h1 className="text-white mb-4 text-3xl sm:text-4xl lg:text-6xl lg:leading-normal font-extrabold">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                Hello, I&apos;m Nichole{" "}
+              </span>
+              <br />
+              <TypeAnimation
+                sequence={[
+                  "Full Stack Developer",
+                  1000,
+                  "React Developer",
+                  1000,
+                  "UI/UX Designer",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
+            </h1>
+          </div>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+            {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            voluptuous. */}
           </p>
           <div>
             <Link

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, NewHero, Hero, Navbar, Skills, Projects, StarsCanvas } from "./components";
+import { About, Contact, Hero, Navbar, Skills, Projects, StarsCanvas } from "./components";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false); // Set default to false
@@ -25,7 +25,6 @@ const App = () => {
             toggleMenu={toggleMenu}
             toggleTheme={toggleTheme}
           />
-          <NewHero />
           <Hero />
         </div>
         <About />

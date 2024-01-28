@@ -12,7 +12,6 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  // const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,18 +28,16 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // const toggleTheme = () => {
-  //   setDarkMode((prev) => !prev);
-    
-  // };
-
   return (
     <nav
-      className={`${
+      className={
+        `${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
-      }`}
+      } w-full flex items-center py-5 fixed top-0 z-20   
+       ${
+        scrolled ? "bg-[#121212] bg-opacity-100" : "border-none"
+      }`
+    }
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -51,28 +48,30 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-12 h-9 object-contain' />
+          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
+          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+            Nichole &nbsp;
+            <span className='sm:block md:hidden hidden'> McGrew</span>
+          </p>
         </Link>
 
-        <ul className='list-none hidden md:flex flex-row gap-8 ml-auto font-normal text-white tracking-[0.8px] text-[18px]'>
-          {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
-            >
-              <HashLink
-                smooth
-                to={`#${nav.id}`}
-                className='no-underline'
-              >
-                {nav.title}
-              </HashLink>
-            </li>
-          ))}
-        </ul>
+        <ul className='list-none hidden md:flex flex-row gap-10 ml-auto font-normal text-white tracking-[0.8px] text-[18px]'>
+  {navLinks.map((nav) => (
+    <li
+      key={nav.id}
+      className={`text-secondary hover:text-primary text-[18px] font-medium cursor-pointer`}
+    >
+      <HashLink
+        smooth
+        to={`#${nav.id}`}
+        className='no-underline'
+      >
+        {nav.title}
+      </HashLink>
+    </li>
+  ))}
+</ul>
+
 
         <div className="flex items-center gap-4 ml-10">
           <div className="socials flex items-center gap-2 hidden lg:flex">
