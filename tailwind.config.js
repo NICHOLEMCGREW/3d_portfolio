@@ -1,14 +1,11 @@
-/** @type {import('tailwindcss').Config} */
-const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   mode: "jit",
   theme: {
     extend: {
       colors: {
-        ...colors,
-      primary: colors.purple,
-      secondary: colors.pink,
+        violet: "#8B5CF6",  // Replace with the appropriate color
+        rose: "#EC4899",    // Replace with the appropriate color
         tertiary: "#151030",
         "black-100": "#100d25",
         "black-200": "#090325",
