@@ -17,7 +17,9 @@ import {
   git,
   figma,
   docker,
-  carrent,
+  // carrent,
+  comingsoon,
+  zenzest,
   jobit,
   tripguide,
   threejs,
@@ -143,26 +145,31 @@ const skills = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "ZenZest",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      
+"ZenZest Social Media: A vibrant online space where users share visual stories, connect creatively, and embrace the zest for life. Join the community to explore, engage, and elevate your social experience with ZenZest.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "typescript",
         color: "green-text-gradient",
+      },
+      {
+        name: "appwrite",
+        color: "orange-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-    source_deploy_link: ""
+    image: zenzest,
+    source_code_link: "https://github.com/NICHOLEMCGREW/ZenZest",
+    source_deploy_link: "https://zen-zest.netlify.app/"
   },
   {
     name: "Job IT",
@@ -182,7 +189,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: comingsoon,
     source_code_link: "https://github.com/",
     source_deploy_link: "https://rose-salon.netlify.app"
   },
@@ -204,7 +211,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: comingsoon,
     source_code_link: "https://github.com/",
     source_deploy_link: "https://rose-salon.netlify.app"
   },

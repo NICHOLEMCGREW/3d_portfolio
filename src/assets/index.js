@@ -7,6 +7,7 @@ import ux from "./ux.png";
 import react from "./react.png";
 import web from "./web.png";
 import github from "./github.png";
+import netlify from "./netlify.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -28,8 +29,8 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
+import comingsoon from './project_coming_soon.png'
+import zenzest from "./zenzest.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -42,6 +43,7 @@ export {
   // mobile,
   web,
   github,
+  netlify,
   menu,
   close,
   css,
@@ -61,7 +63,9 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
+  // carrent,
+  comingsoon,
+  zenzest,
   jobit,
   tripguide,
 };
