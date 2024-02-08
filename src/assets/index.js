@@ -30,6 +30,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import comingsoon from './project_coming_soon.png'
+import vivagusta from './vivagusta.png'
 import zenzest from "./zenzest.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -65,6 +66,7 @@ export {
   tesla,
   // carrent,
   comingsoon,
+  vivagusta,
   zenzest,
   jobit,
   tripguide,

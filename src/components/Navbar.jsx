@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
-import { FiSun } from "react-icons/fi";
-import { MdOutlineNightlight } from "react-icons/md";
 
 import { styles } from "../styles";
 import { navLinks, letsConnectLink, socials } from "../constants";
@@ -51,7 +49,7 @@ const Navbar = () => {
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Nichole &nbsp;
-            <span className='sm:block md:hidden'> McGrew</span>
+            <span className='sm:block'> McGrew</span>
           </p>
         </Link>
 

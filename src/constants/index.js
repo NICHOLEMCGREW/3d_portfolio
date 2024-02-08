@@ -19,6 +19,7 @@ import {
   docker,
   // carrent,
   comingsoon,
+  vivagusta,
   zenzest,
   jobit,
   tripguide,
@@ -145,7 +146,7 @@ const skills = [
 
 const projects = [
   {
-    name: "Social Media App",
+    name: "ZenZest",
     description:
       
 "ZenZest Social Media: A vibrant online space where users share visual stories, connect creatively, and embrace the zest for life. Join the community to explore, engage, and elevate your social experience with ZenZest.",
@@ -172,12 +173,12 @@ const projects = [
     source_deploy_link: "https://zen-zest.netlify.app/"
   },
   {
-    name: "Food Ordering",
+    name: "Viva Gusta",
     description:
       "Experience the best of both worlds with Viva Gusto! Explore authentic Italian dishes and mouthwatering burgers, all at your fingertips. Customize and savor swift delivery from local favorites. Download now for a culinary journey to your doorstep.",
     tags: [
       {
-        name: "Next.js",
+        name: "next.js",
         color: "blue-text-gradient",
       },
       {
@@ -185,7 +186,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "SQL",
+        name: "sql",
         color: "orange-text-gradient",
       },
       {
@@ -193,11 +194,15 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
+        name: "stripe",
+        color: "blue-text-gradient",
+      },
+      {
         name: "prisma",
         color: "blue-text-gradient",
       },
     ],
-    image: comingsoon,
+    image: vivagusta,
     source_code_link: "https://github.com/NICHOLEMCGREW/nextjs-food-ordering-app",
     source_deploy_link: "https://viva-gusto.netlify.app"
   },

@@ -10,26 +10,17 @@ const App = () => {
     setIsOpen((prev) => !prev);
   };
 
-  const toggleTheme = () => {
-    setDarkMode((prev) => !prev);
-  };
-
   return (
     <BrowserRouter>
-      <div className={`relative z-0 ${darkMode ? 'dark' : ''}`}>
-        <div className={`bg-hero-pattern bg-cover bg-no-repeat bg-center ${darkMode ? 'dark:bg-gradient-to-tr from-[#0235a3] via-[#030a1c] to-[#05174e]' : ''}`}>
-          <Navbar
-            darkMode={darkMode}
-            isOpen={isOpen}
-            toggleMenu={toggleMenu}
-            toggleTheme={toggleTheme}
-          />
+      <div className="relative z-0">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Navbar isOpen={isOpen} toggleMenu={toggleMenu} />
           <Hero />
         </div>
         <About />
         <Skills />
         <Projects />
-        <div className='relative z-0'>
+        <div className="relative z-0">
           <Contact />
           <StarsCanvas />
         </div>
