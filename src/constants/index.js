@@ -145,7 +145,7 @@ const skills = [
 
 const projects = [
   {
-    name: "ZenZest",
+    name: "Social Media App",
     description:
       
 "ZenZest Social Media: A vibrant online space where users share visual stories, connect creatively, and embrace the zest for life. Join the community to explore, engage, and elevate your social experience with ZenZest.",
@@ -172,12 +172,12 @@ const projects = [
     source_deploy_link: "https://zen-zest.netlify.app/"
   },
   {
-    name: "Job IT",
+    name: "Food Ordering",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Experience the best of both worlds with Viva Gusto! Explore authentic Italian dishes and mouthwatering burgers, all at your fingertips. Customize and savor swift delivery from local favorites. Download now for a culinary journey to your doorstep.",
     tags: [
       {
-        name: "react",
+        name: "Next.js",
         color: "blue-text-gradient",
       },
       {
@@ -185,13 +185,21 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "SQL",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "tailwind",
         color: "pink-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "blue-text-gradient",
       },
     ],
     image: comingsoon,
-    source_code_link: "https://github.com/",
-    source_deploy_link: "https://rose-salon.netlify.app"
+    source_code_link: "https://github.com/NICHOLEMCGREW/nextjs-food-ordering-app",
+    source_deploy_link: "https://viva-gusto.netlify.app"
   },
   {
     name: "Trip Guide",

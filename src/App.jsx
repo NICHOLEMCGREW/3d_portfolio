@@ -4,7 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Hero, Navbar, Skills, Projects, StarsCanvas } from "./components";
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false); // Set default to false
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
