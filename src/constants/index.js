@@ -186,7 +186,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "sql",
+        name: "psql",
         color: "orange-text-gradient",
       },
       {
@@ -199,6 +199,10 @@ const projects = [
       },
       {
         name: "prisma",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "docker",
         color: "blue-text-gradient",
       },
     ],
