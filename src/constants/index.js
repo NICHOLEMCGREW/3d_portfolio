@@ -18,7 +18,8 @@ import {
   figma,
   docker,
   // carrent,
-  comingsoon,
+  scouts,
+  scouts,
   vivagusta,
   zenzest,
   jobit,
@@ -211,26 +212,22 @@ const projects = [
     source_deploy_link: "https://viva-gusto.netlify.app"
   },
   {
-    name: "Trip Guide",
+    name: "Cub Scouts Website",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "An engaging landing page designed to introduce Cub Scouting to prospective members and their families. Discover the exciting world of Cub Scouting, learn about activities, and stay updated with upcoming events and activities.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: comingsoon,
-    source_code_link: "https://github.com/",
-    source_deploy_link: "https://rose-salon.netlify.app"
+    image: scouts,
+    source_code_link: "https://github.com/NICHOLEMCGREW/cub-scouts-365",
+    source_deploy_link: "https://cub-scouts-pack-365.netlify.app"
   },
 ];
 
