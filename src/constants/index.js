@@ -175,7 +175,7 @@ const projects = [
   {
     name: "Viva Gusta",
     description:
-      "Experience the best of both worlds with Viva Gusto! Explore authentic Italian dishes and mouthwatering burgers, all at your fingertips. Customize and savor swift delivery from local favorites. Download now for a culinary journey to your doorstep.",
+    "Discover the ultimate fusion at Gusto Vibes! Delight in the richness of Italian flavors and the juiciness of gourmet burgers. Customize your order and experience swift service from our local partners. Start your culinary adventure now!",
     tags: [
       {
         name: "next.js",
@@ -185,18 +185,18 @@ const projects = [
         name: "restapi",
         color: "green-text-gradient",
       },
-      {
-        name: "psql",
-        color: "orange-text-gradient",
-      },
+      // {
+      //   name: "psql",
+      //   color: "orange-text-gradient",
+      // },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
-      {
-        name: "stripe",
-        color: "blue-text-gradient",
-      },
+      // {
+      //   name: "stripe",
+      //   color: "blue-text-gradient",
+      // },
       {
         name: "prisma",
         color: "blue-text-gradient",
