@@ -57,7 +57,7 @@ export const socials = [
   {
     name: "linkedin",
     icon: linkedin,
-    link: 'https://www.linkedin.com/in/nichole-mcgrew/',
+    link: 'https://www.linkedin.com/in/nicholemcgrew/',
   },
   {
     name: "github",
