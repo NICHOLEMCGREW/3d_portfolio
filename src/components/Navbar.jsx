@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 
@@ -31,7 +31,7 @@ const Navbar = () => {
       className={
         `${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20   
+      } w-full flex items-center py-6 fixed top-0 z-20   
        ${
         scrolled ? "bg-[#121212] bg-opacity-100" : "border-none"
       }`
@@ -96,13 +96,14 @@ const Navbar = () => {
             <li
               className={`${
                 active === letsConnectLink.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer list-none connect vvd ml-7`}
+              } hover:text-white text-[16px]  font-medium cursor-pointer list-none connect vvd ml-7`}
               onClick={() => setActive(letsConnectLink.title)}
             >
               <HashLink
                 smooth
                 to={`/#contact`}
-                className={`contact relative ${letsConnectLink.className || ''} border-white border-opacity-50 border-2 p-4 text-white transition duration-300 ease-in-out`}
+                className={`contact relative ${letsConnectLink.className || ''} text-white transition duration-300 ease-in-out`}
+                style={{ padding: '15px 16px' }} 
                 onClick={() => {
                   setToggle(false);
                   setActive(letsConnectLink.title);

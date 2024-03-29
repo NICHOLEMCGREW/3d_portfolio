@@ -1,7 +1,7 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import contactImg from "../assets/img/contact-img.svg";
+// import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";

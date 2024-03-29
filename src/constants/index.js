@@ -19,7 +19,6 @@ import {
   docker,
   // carrent,
   scouts,
-  scouts,
   vivagusta,
   zenzest,
   jobit,
