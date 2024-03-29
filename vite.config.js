@@ -9,4 +9,8 @@ export default defineConfig({
   resolve: {
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],
   },
+  build: {
+    assetsInlineLimit: 0, // Ensure that no assets are inlined
+    assetsInclude: ['src/assets/**'], // Include all files in the src/assets directory
+  },
 });

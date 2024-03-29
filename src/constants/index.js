@@ -24,6 +24,7 @@ import {
   // jobit,
   // tripguide,
   threejs,
+  // coverImage, // Use the named import here
 } from "../assets";
 
 import linkedin from '../assets/socials/linkedin.svg';
@@ -32,7 +33,6 @@ import twitter from '../assets/socials/twitter.svg';
 // import instagram from '../assets/socials/instagram.svg';
 
 export const navLinks = [
-  
   {
     id: "about",
     title: "About",
@@ -73,6 +73,10 @@ export const socials = [
   //   name: "instagram",
   //   icon: instagram,
   //   link: 'https://www.instagram.com/insight.photos/',
+  // },
+  // {
+  //   name: "cover",
+  //   icon: coverImage, // Use the named import here
   // },
 ];
 
@@ -147,13 +151,10 @@ const skills = [
   },
 ];
 
-
 const projects = [
   {
     name: "ZenZest",
-    description:
-      
-"ZenZest Social Media: A vibrant online space where users share visual stories, connect creatively, and embrace the zest for life. Join the community to explore, engage, and elevate your social experience with ZenZest.",
+    description: "ZenZest Social Media: A vibrant online space where users share visual stories, connect creatively, and embrace the zest for life. Join the community to explore, engage, and elevate your social experience with ZenZest.",
     tags: [
       {
         name: "react",
@@ -178,8 +179,7 @@ const projects = [
   },
   {
     name: "Viva Gusta",
-    description:
-    "Discover the ultimate fusion at Gusto Vibes! Delight in the richness of Italian flavors and the juiciness of gourmet burgers. Customize your order and experience swift service from our local partners. Start your culinary adventure now!",
+    description: "Discover the ultimate fusion at Gusto Vibes! Delight in the richness of Italian flavors and the juiciness of gourmet burgers. Customize your order and experience swift service from our local partners. Start your culinary adventure now!",
     tags: [
       {
         name: "next.js",
@@ -189,18 +189,10 @@ const projects = [
         name: "restapi",
         color: "green-text-gradient",
       },
-      // {
-      //   name: "psql",
-      //   color: "orange-text-gradient",
-      // },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
-      // {
-      //   name: "stripe",
-      //   color: "blue-text-gradient",
-      // },
       {
         name: "prisma",
         color: "blue-text-gradient",
@@ -216,8 +208,7 @@ const projects = [
   },
   {
     name: "Cub Scouts Website",
-    description:
-      "An engaging landing page designed to introduce Cub Scouting to prospective members and their families. Discover the exciting world of Cub Scouting, learn about activities, and stay updated with upcoming events and activities.",
+    description: "An engaging landing page designed to introduce Cub Scouting to prospective members and their families. Discover the exciting world of Cub Scouting, learn about activities, and stay updated with upcoming events and activities.",
     tags: [
       {
         name: "react",

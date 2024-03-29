@@ -6,6 +6,8 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
+// import coverImage from '../assets/cover.png';
+
 
 
 export {
@@ -19,5 +21,6 @@ export {
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  // coverImage,
 };
