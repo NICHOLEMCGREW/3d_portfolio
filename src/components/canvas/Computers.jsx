@@ -1,6 +1,7 @@
-import React, { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import PropTypes from "prop-types"; // Import PropTypes package
 
 import CanvasLoader from "../Loader";
 
@@ -27,6 +28,11 @@ const Computers = ({ isMobile }) => {
       />
     </mesh>
   );
+};
+
+// Define prop types validation for Computers component
+Computers.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
 };
 
 const ComputersCanvas = () => {
@@ -67,6 +73,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
+        {/* Pass the isMobile prop to the Computers component */}
         <Computers isMobile={isMobile} />
       </Suspense>
 
