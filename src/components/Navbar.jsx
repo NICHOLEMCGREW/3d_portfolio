@@ -96,7 +96,7 @@ const Navbar = () => {
             <li
               className={`${
                 active === letsConnectLink.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[16px]  font-medium cursor-pointer list-none connect vvd ml-7`}
+              } hover:text-white text-[17px]  font-medium cursor-pointer list-none connect vvd ml-7`}
               onClick={() => setActive(letsConnectLink.title)}
             >
               <HashLink
