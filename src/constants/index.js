@@ -1,6 +1,6 @@
 import {
   react,
-  backend,
+  // backend,
   full,
   // creator,
   web,
@@ -21,15 +21,15 @@ import {
   scouts,
   vivagusta,
   zenzest,
-  jobit,
-  tripguide,
+  // jobit,
+  // tripguide,
   threejs,
 } from "../assets";
 
 import linkedin from '../assets/socials/linkedin.svg';
 import github from '../assets/socials/github.svg';
 import twitter from '../assets/socials/twitter.svg';
-import instagram from '../assets/socials/instagram.svg';
+// import instagram from '../assets/socials/instagram.svg';
 
 export const navLinks = [
   
@@ -86,7 +86,7 @@ const services = [
     icon: react,
   },
   {
-    title: "Backend Developer",
+    title: " Developer",
     icon: full,
   },
   {
@@ -140,6 +140,10 @@ const skills = [
   {
     name: "figma",
     icon: figma,
+  },
+  {
+    name: "redux",
+    icon: redux,
   },
 ];
 

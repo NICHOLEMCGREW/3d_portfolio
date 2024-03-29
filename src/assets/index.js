@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
+// import backend from "./backend.png";
 import full from "./full.png";
 // import creator from "./creator.png";
 import ux from "./ux.png";
@@ -25,21 +25,21 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+// import meta from "./company/meta.png";
+// import shopify from "./company/shopify.png";
+// import starbucks from "./company/starbucks.png";
+// import tesla from "./company/tesla.png";
 import comingsoon from './project_coming_soon.png'
 import scouts from './scouts.png'
 import vivagusta from './vivagusta.png'
 import zenzest from "./zenzest.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+// import jobit from "./jobit.png";
+// import tripguide from "./tripguide.png";
 
 export {
   logo,
   full, 
-  backend,
+  // backend,
   react,
   ux,
   // mobile,
@@ -61,15 +61,15 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  // meta,
+  // shopify,
+  // starbucks,
+  // tesla,
   // carrent,
   scouts,
   comingsoon,
   vivagusta,
   zenzest,
-  jobit,
-  tripguide,
+  // jobit,
+  // tripguide,
 };
