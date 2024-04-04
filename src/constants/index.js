@@ -24,6 +24,7 @@ import {
   // jobit,
   // tripguide,
   threejs,
+  comingsoon,
   // coverImage, // Use the named import here
 } from "../assets";
 
@@ -34,16 +35,16 @@ import twitter from '../assets/socials/twitter.svg';
 
 export const navLinks = [
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
     id: "about",
     title: "About",
   },
   {
     id: "skills",
     title: "Skills",
-  },
-  {
-    id: "projects",
-    title: "Projects",
   },
 ];
 
@@ -82,16 +83,16 @@ export const socials = [
 
 const services = [
   {
+    title: "Full-Stack Developer",
+    icon: full,
+  },
+  {
     title: "Web Developer",
     icon: web,
   },
   {
     title: "React Developer",
     icon: react,
-  },
-  {
-    title: " Developer",
-    icon: full,
   },
   {
     title: "UI/UX Designer",
@@ -153,29 +154,23 @@ const skills = [
 
 const projects = [
   {
-    name: "ZenZest",
-    description: "ZenZest Social Media: A vibrant online space where users share visual stories, connect creatively, and embrace the zest for life. Join the community to explore, engage, and elevate your social experience with ZenZest.",
+    name: "Cub Scouts",
+    description: "An engaging landing page designed to introduce Cub Scouting to prospective members and their families. Discover the exciting world of Cub Scouting, learn about activities, and stay updated with upcoming events and activities.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "appwrite",
-        color: "orange-text-gradient",
-      },
-      {
         name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: zenzest,
-    source_code_link: "https://github.com/NICHOLEMCGREW/ZenZest",
-    source_deploy_link: "https://zen-zest.netlify.app/"
+    image: scouts,
+    links: {
+      source_code: "https://github.com/NICHOLEMCGREW/cub-scouts-365",
+      source_deploy: "https://cub-scouts-pack-365.netlify.app"
+    }
   },
   {
     name: "Viva Gusta",
@@ -203,25 +198,41 @@ const projects = [
       },
     ],
     image: vivagusta,
-    source_code_link: "https://github.com/NICHOLEMCGREW/nextjs-food-ordering-app",
-    source_deploy_link: "https://viva-gusto.netlify.app"
+    links: {
+      source_code: "https://github.com/NICHOLEMCGREW/nextjs-food-ordering-app",
+      source_deploy: "https://viva-gusto.netlify.app"
+    }
   },
   {
-    name: "Cub Scouts Website",
-    description: "An engaging landing page designed to introduce Cub Scouting to prospective members and their families. Discover the exciting world of Cub Scouting, learn about activities, and stay updated with upcoming events and activities.",
+    name: "FitTrack Pro",
+    description: "Empowering users in their fitness journey with a seamless platform to log and track weight and body measurements over time. Focuses on user-friendly features and intuitive graphs for visual progress monitoring.",
     tags: [
+      {
+        name: "mongo",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "express",
+        color: "green-text-gradient",
+      },
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "node",
         color: "pink-text-gradient",
       },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      }
     ],
-    image: scouts,
-    source_code_link: "https://github.com/NICHOLEMCGREW/cub-scouts-365",
-    source_deploy_link: "https://cub-scouts-pack-365.netlify.app"
+    image: comingsoon,
+    links: {
+      source_code: "https://github.com/NICHOLEMCGREW",
+      source_deploy: ""
+    }
   },
 ];
 

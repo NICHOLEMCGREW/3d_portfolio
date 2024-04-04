@@ -17,9 +17,9 @@ const App = () => {
           <Navbar isOpen={isOpen} toggleMenu={toggleMenu} />
           <Hero />
         </div>
+        <Projects />
         <About />
         <Skills />
-        <Projects />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

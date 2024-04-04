@@ -1,24 +1,17 @@
-import {Tilt} from "react-tilt";
+// import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <div className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full dark-gradient p-[1px] rounded-[20px] shadow-card'
     >
       <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
         className='rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col relative'
       >
         <div className='absolute inset-0 rounded-[20px] border-2 border-gradient'></div>
@@ -33,7 +26,7 @@ const ServiceCard = ({ index, title, icon }) => (
         </h3>
       </div>
     </motion.div>
-  </Tilt>
+  </div>
 );
 
 const About = () => {
@@ -48,7 +41,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled fullstack developer with expertise in JavaScript, and experience in frameworks like React, Node.js, and
+        I'm a skilled full-stack developer with expertise in JavaScript, and experience in frameworks like React, Node.js, and
         Three.js. I'm a quick learner and collaborate closely to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!

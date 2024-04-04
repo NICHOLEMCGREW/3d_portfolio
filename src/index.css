@@ -284,3 +284,22 @@ li.contact a {
 .socials a:hover img {
 filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
+
+.tooltip {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.black-gradient:hover .tooltip {
+  display: block;
+  opacity: 1;
+}
