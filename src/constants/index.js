@@ -59,16 +59,19 @@ export const socials = [
     name: "linkedin",
     icon: linkedin,
     link: 'https://www.linkedin.com/in/nicholemcgrew/',
+    contactP: 'Connect with me on LinkedIn',
   },
   {
     name: "github",
     icon: github,
     link: 'https://github.com/NICHOLEMCGREW',
+    contactP: 'Check out my projects on GitHub',
   },
   {
     name: "twitter",
     icon: twitter,
     link: 'https://twitter.com/NicholeMcGrew',
+    contactP: 'Follow me on Twitter',
   },
   // {
   //   name: "instagram",
