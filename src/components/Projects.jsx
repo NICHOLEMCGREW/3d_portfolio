@@ -15,13 +15,19 @@ const ProjectCard = ({
   image,
   links: { source_code: source_code_link, source_deploy: source_deploy_link },
 }) => {
-  const handleCardClick = () => {
+  const handleViewCodeClick = (e) => {
+    e.stopPropagation();
+    window.open(source_code_link, '_blank');
+  };
+
+  const handleViewSiteClick = (e) => {
+    e.stopPropagation();
     window.open(source_deploy_link, '_blank');
   };
 
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
-      <div className="project-card" onClick={handleCardClick}>
+      <div className="project-card">
         <Tilt
           options={{
             max: 45,
@@ -41,9 +47,7 @@ const ProjectCard = ({
             <h3 className="text-white font-bold text-[24px]">{name}</h3>
             <div className="flex gap-4">
               <a
-                href={source_code_link}
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={handleViewCodeClick}
                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer relative"
               >
                 <img
@@ -54,9 +58,7 @@ const ProjectCard = ({
                 <span className="tooltip text-center">View code</span>
               </a>
               <a
-                href={source_deploy_link}
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={handleViewSiteClick}
                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer relative"
               >
                 <img
@@ -127,8 +129,10 @@ ProjectCard.propTypes = {
     })
   ).isRequired,
   image: PropTypes.string.isRequired,
-  source_code_link: PropTypes.string.isRequired,
-  source_deploy_link: PropTypes.string.isRequired,
+  links: PropTypes.shape({
+    source_code: PropTypes.string.isRequired,
+    source_deploy: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default SectionWrapper(Projects, 'projects');
