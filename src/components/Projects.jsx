@@ -25,9 +25,14 @@ const ProjectCard = ({
     window.open(source_deploy_link, '_blank');
   };
 
+  const handleCardClick = () => {
+    // Open the deployed link when clicking anywhere on the card
+    window.open(source_deploy_link, '_blank');
+  };
+
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
-      <div className="project-card">
+      <div className="project-card" onClick={handleCardClick}>
         <Tilt
           options={{
             max: 45,
