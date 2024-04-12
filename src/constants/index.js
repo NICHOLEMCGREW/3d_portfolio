@@ -207,9 +207,17 @@ const projects = [
     }
   },
   {
-    name: "FitTrack Pro",
-    description: "Empowering users in their fitness journey with a seamless platform to log and track weight and body measurements over time. Focuses on user-friendly features and intuitive graphs for visual progress monitoring.",
+    name: "Connected",
+    description: "Elevate your online presence with custom-designed websites crafted to reflect your unique vision. With a keen eye for design and a focus on functionality, I specialize in delivering digital experiences that resonate with your audience. Join me in connecting art and logic, and building the website of your dreams.",
     tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
       {
         name: "mongo",
         color: "orange-text-gradient",
@@ -218,23 +226,19 @@ const projects = [
         name: "express",
         color: "green-text-gradient",
       },
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "node",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "green-text-gradient",
-      }
+      // {
+      //   name: "node",
+      //   color: "pink-text-gradient",
+      // },
+      // {
+      //   name: "typescript",
+      //   color: "green-text-gradient",
+      // }
     ],
     image: comingsoon,
     links: {
-      source_code: "https://github.com/NICHOLEMCGREW",
-      source_deploy: ""
+      source_code: "https://github.com/NICHOLEMCGREW/connected",
+      source_deploy: "https://connected-link.netlify.app/"
     }
   },
 ];
