@@ -64,13 +64,13 @@ export const socials = [
   {
     name: "github",
     icon: github,
-    link: 'https://github.com/NICHOLEMCGREW',
+    link: 'https://github.com/nicholemcgrew',
     contactP: 'Check out my projects on GitHub',
   },
   {
     name: "twitter",
     icon: twitter,
-    link: 'https://twitter.com/NicholeMcGrew',
+    link: 'https://twitter.com/nicholemcgrew',
     contactP: 'Follow me on Twitter',
   },
   // {
@@ -171,7 +171,7 @@ const projects = [
     ],
     image: scouts,
     links: {
-      source_code: "https://github.com/NICHOLEMCGREW/cub-scouts-365",
+      source_code: "https://github.com/nicholemcgrew/cub-scouts-365",
       source_deploy: "https://cub-scouts-pack-365.netlify.app"
     }
   },
@@ -202,7 +202,7 @@ const projects = [
     ],
     image: vivagusta,
     links: {
-      source_code: "https://github.com/NICHOLEMCGREW/nextjs-food-ordering-app",
+      source_code: "https://github.com/nicholemcgrew/nextjs-food-ordering-app",
       source_deploy: "https://viva-gusto.netlify.app"
     }
   },
@@ -237,7 +237,7 @@ const projects = [
     ],
     image: comingsoon,
     links: {
-      source_code: "https://github.com/NICHOLEMCGREW/connected",
+      source_code: "https://github.com/nicholemcgrew/connected",
       source_deploy: "https://connected-link.netlify.app/"
     }
   },
