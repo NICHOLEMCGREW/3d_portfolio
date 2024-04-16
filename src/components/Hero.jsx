@@ -23,7 +23,7 @@ const HeroSection = () => {
 							<br />
 							<TypeAnimation
 								sequence={[
-									"Software Engineer",
+									"Full-Stack Developer",
 									1000,
 									// "React Developer",
 									// 1000,
@@ -36,10 +36,9 @@ const HeroSection = () => {
 							/>
 						</h1>
 					</div>
-					{/* <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
-          </p> */}
+					<p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+					Curious, Creative, Problem Solver, Collaborator, Craftsman, Teacher, Student.
+          </p>
 					<div>
 						<Link
 							to="contact" // Replace with the correct ID of your contact section
