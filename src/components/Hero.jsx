@@ -25,8 +25,8 @@ const HeroSection = () => {
 								sequence={[
 									"Software Engineer",
 									1000,
-									// "React Developer",
-									// 1000,
+									"Full Stack Developer",
+									1000,
 									// "UI/UX Designer",
 									// 1000,
 								]}
@@ -36,7 +36,7 @@ const HeroSection = () => {
 							/>
 						</h1>
 					</div>
-					<p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+					<p className="text-[#ADB7BE] text-base sm:text-lg mt-1 mb-6 lg:text-xl">
 					Curious, Creative, Problem Solver, Collaborator, Craftsman, Teacher, Student.
           </p>
 					<div>
