@@ -33,12 +33,12 @@ const ProjectCard = ({
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <div className="project-card" onClick={handleCardClick}>
-        <Tilt
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
+        <div
+          // options={{
+          //   max: 1,
+          //   scale: 0,
+          //   speed: 0,
+          // }}
           className="relative p-5 rounded-2xl h-[530px] sm:w-[360px] w-full border-2 border-gradient cursor-pointer"
         >
           <div className="w-full h-[230px]">
@@ -86,7 +86,7 @@ const ProjectCard = ({
               </p>
             ))}
           </div>
-        </Tilt>
+        </div>
       </div>
     </motion.div>
   );
