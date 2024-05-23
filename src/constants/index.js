@@ -20,11 +20,13 @@ import {
   // carrent,
   scouts,
   vivagusta,
-  zenzest,
+  // zenzest,
   // jobit,
   // tripguide,
   threejs,
-  comingsoon,
+  // comingsoon,
+  jobsPortal,
+  techProducts,
   // coverImage, // Use the named import here
 } from "../assets";
 
@@ -176,39 +178,31 @@ const projects = [
     }
   },
   {
-    name: "Viva Gusta",
-    description: "Discover the ultimate fusion at Gusto Vibes! Delight in the richness of Italian flavors and the juiciness of gourmet burgers. Customize your order and experience swift service from our local partners. Start your culinary adventure now!",
+    name: "Tech Products",
+    description: "Leveraging the power of Tailwind CSS to design and style a dynamic product list. With JavaScript, I implemented advanced filtering and seamless add-to-cart functionality, enhancing the user experience and delivering a polished e-commerce solution.",
     tags: [
       {
-        name: "next.js",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
-      {
-        name: "prisma",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "docker",
-        color: "blue-text-gradient",
-      },
     ],
-    image: vivagusta,
+    image: techProducts,
     links: {
-      source_code: "https://github.com/nicholemcgrew/nextjs-food-ordering-app",
-      source_deploy: "https://viva-gusto.netlify.app"
+      source_code: "https://github.com/nicholemcgrew/product-filter",
+      source_deploy: "https://magenta-sunshine-a1ec75.netlify.app/"
     }
   },
   {
-    name: "Connected",
-    description: "Elevate your online presence with custom-designed websites crafted to reflect your unique vision. With a keen eye for design and a focus on functionality, I specialize in delivering digital experiences that resonate with your audience. Join me in connecting art and logic, and building the website of your dreams.",
+    name: "React Jobs Portal",
+    description: "Developed a dynamic and responsive job listing frontend application using React. Features include fetching job listings from a external API, a component-based architecture, robust state management for user interactions, and a fully responsive design for seamless usability across desktops, tablets, and mobile devices.",
     tags: [
       {
         name: "react",
@@ -219,13 +213,13 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
-        name: "mongo",
+        name: "api",
         color: "orange-text-gradient",
       },
-      {
-        name: "express",
-        color: "green-text-gradient",
-      },
+      // {
+      //   name: "express",
+      //   color: "green-text-gradient",
+      // },
       // {
       //   name: "node",
       //   color: "pink-text-gradient",
@@ -235,12 +229,47 @@ const projects = [
       //   color: "green-text-gradient",
       // }
     ],
-    image: comingsoon,
+    image: jobsPortal,
     links: {
-      source_code: "https://github.com/nicholemcgrew/connected",
-      source_deploy: "https://connected-link.netlify.app/"
+      source_code: "https://github.com/nicholemcgrew/react-jobs-portal",
+      source_deploy: "https://sparkly-vacherin-8aa98b.netlify.app/jobs"
     }
   },
+  // {
+  //   name: "Connected",
+  //   description: "Elevate your online presence with custom-designed websites crafted to reflect your unique vision. With a keen eye for design and a focus on functionality, I specialize in delivering digital experiences that resonate with your audience. Join me in connecting art and logic, and building the website of your dreams.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "tailwind",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "mongo",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "express",
+  //       color: "green-text-gradient",
+  //     },
+  //     // {
+  //     //   name: "node",
+  //     //   color: "pink-text-gradient",
+  //     // },
+  //     // {
+  //     //   name: "typescript",
+  //     //   color: "green-text-gradient",
+  //     // }
+  //   ],
+  //   image: comingsoon,
+  //   links: {
+  //     source_code: "https://github.com/nicholemcgrew/connected",
+  //     source_deploy: "https://connected-link.netlify.app/"
+  //   }
+  // },
 ];
 
 export { services, skills, projects };

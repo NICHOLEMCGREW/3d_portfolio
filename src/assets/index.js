@@ -30,6 +30,8 @@ import threejs from "./tech/threejs.svg";
 // import starbucks from "./company/starbucks.png";
 // import tesla from "./company/tesla.png";
 import comingsoon from './project_coming_soon.png'
+import jobsPortal from './jobs-portal.png'
+import techProducts from '../assets/product-filter.png'
 import scouts from './scouts.png'
 import vivagusta from './vivagusta.png'
 import zenzest from "./zenzest.png";
@@ -68,6 +70,8 @@ export {
   // carrent,
   scouts,
   comingsoon,
+  jobsPortal,
+  techProducts,
   vivagusta,
   zenzest,
   // jobit,
