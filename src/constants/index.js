@@ -180,7 +180,7 @@ const projects = [
   },
   {
     "name": "Admin Dashboard",
-    "description": "Developed a comprehensive and responsive admin dashboard application using Next.js and React. Features include a component-based architecture, robust state management for user interactions, dynamic data visualization with Recharts, and a fully responsive design for seamless usability across desktops, tablets, and mobile devices. Integrated form validation with React Hook Form and Zod, and utilized Shadcn/ui for a consistent and modern UI.",
+    "description": "Developed a comprehensive and responsive admin dashboard application using Next.js and React. Features include a component-based architecture, robust state management for user interactions, dynamic data visualization with Recharts, and a fully responsive design for seamless usability across devices. Integrated form validation with React Hook Form and Zod, and utilized Shadcn/ui for a consistent and modern UI.",
     "tags": [
       {
         "name": "next.js",
