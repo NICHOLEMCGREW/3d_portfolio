@@ -31,7 +31,8 @@ import threejs from "./tech/threejs.svg";
 // import tesla from "./company/tesla.png";
 import comingsoon from './project_coming_soon.png'
 import jobsPortal from './jobs-portal.png'
-import techProducts from '../assets/product-filter.png'
+import adminDash from './adminDash.png'
+// import techProducts from '../assets/product-filter.png'
 import scouts from './scouts.png'
 import vivagusta from './vivagusta.png'
 import zenzest from "./zenzest.png";
@@ -71,7 +72,8 @@ export {
   scouts,
   comingsoon,
   jobsPortal,
-  techProducts,
+  adminDash,
+  // techProducts,
   vivagusta,
   zenzest,
   // jobit,

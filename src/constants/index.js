@@ -16,17 +16,18 @@ import {
   mongodb,
   git,
   figma,
-  docker,
+  // docker,
   // carrent,
   scouts,
-  vivagusta,
+  // vivagusta,
   // zenzest,
   // jobit,
   // tripguide,
   threejs,
   // comingsoon,
   jobsPortal,
-  techProducts,
+  adminDash,
+  // techProducts,
   // coverImage, // Use the named import here
 } from "../assets";
 
@@ -214,7 +215,7 @@ const projects = [
         "color": "red-text-gradient"
       }
     ],
-    "image": "path/to/your/dashboardImage.png",
+    "image": adminDash,
     "links": {
       "source_code": "https://github.com/nicholemcgrew/next-admin-dashboard",
       "source_deploy": "https://cool-piroshki-1272eb.netlify.app/"
