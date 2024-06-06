@@ -178,28 +178,49 @@ const projects = [
     }
   },
   {
-    name: "Tech Products",
-    description: "Leveraging the power of Tailwind CSS to design and style a dynamic product list. With JavaScript, I implemented advanced filtering and seamless add-to-cart functionality, enhancing the user experience and delivering a polished e-commerce solution.",
-    tags: [
+    "name": "Admin Dashboard",
+    "description": "Developed a comprehensive and responsive admin dashboard application using Next.js and React. Features include a component-based architecture, robust state management for user interactions, dynamic data visualization with Recharts, and a fully responsive design for seamless usability across desktops, tablets, and mobile devices. Integrated form validation with React Hook Form and Zod, and utilized Shadcn/ui for a consistent and modern UI.",
+    "tags": [
       {
-        name: "html",
-        color: "blue-text-gradient",
+        "name": "next.js",
+        "color": "blue-text-gradient"
       },
       {
-        name: "javascript",
-        color: "green-text-gradient",
+        "name": "react",
+        "color": "blue-text-gradient"
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        "name": "typescript",
+        "color": "green-text-gradient"
       },
+      {
+        "name": "tailwind",
+        "color": "pink-text-gradient"
+      },
+      {
+        "name": "recharts",
+        "color": "orange-text-gradient"
+      },
+      {
+        "name": "lucide-react",
+        "color": "purple-text-gradient"
+      },
+      {
+        "name": "react-hook-form",
+        "color": "yellow-text-gradient"
+      },
+      {
+        "name": "zod",
+        "color": "red-text-gradient"
+      }
     ],
-    image: techProducts,
-    links: {
-      source_code: "https://github.com/nicholemcgrew/product-filter",
-      source_deploy: "https://magenta-sunshine-a1ec75.netlify.app/"
+    "image": "path/to/your/dashboardImage.png",
+    "links": {
+      "source_code": "https://github.com/nicholemcgrew/next-admin-dashboard",
+      "source_deploy": "https://cool-piroshki-1272eb.netlify.app/"
     }
   },
+  
   {
     name: "React Jobs Portal",
     description: "Developed a dynamic and responsive job listing frontend application using React. Features include fetching job listings from a external API, a component-based architecture, robust state management for user interactions, and a fully responsive design for seamless usability across desktops, tablets, and mobile devices.",
