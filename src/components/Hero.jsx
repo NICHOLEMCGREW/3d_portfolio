@@ -4,7 +4,8 @@ import { Link } from "react-scroll";
 import Image from "../assets/img/hero.png";
 
 const HeroSection = () => {
-  const googleDocsLink = "https://docs.google.com/document/d/1hqtxe9iwii7zzBRzDM2pcIcLoOrOCCOS2TB6IGXLhEc/edit?usp=drive_link";
+  const googleDocsLink =
+    "https://docs.google.com/document/d/1hqtxe9iwii7zzBRzDM2pcIcLoOrOCCOS2TB6IGXLhEc/edit?usp=drive_link";
 
   return (
     <section className="h-screen flex items-center">
@@ -58,9 +59,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-2 place-self-center mt-4 lg:mt-2"
+          className="col-span-4 sm:col-span-4 lg:col-span-2 place-self-center mt-4 lg:mt-2"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative overflow-hidden">
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative overflow-hidden mx-auto">
             <img
               src={Image}
               alt="hero image"
