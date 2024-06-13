@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import Image from "../assets/img/hero.png";
 
 const HeroSection = () => {
-  const googleDocsLink = "https://docs.google.com/document/d/19xl75WQ86VNAHe4Voz75MUkphc4y28F6faEHSKBnXcM/edit?usp=drive_link";
+  const googleDocsLink = "https://docs.google.com/document/d/1hqtxe9iwii7zzBRzDM2pcIcLoOrOCCOS2TB6IGXLhEc/edit?usp=drive_link";
 
   return (
     <section className="h-screen flex items-center">
