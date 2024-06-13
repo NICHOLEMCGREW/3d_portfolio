@@ -8,13 +8,13 @@ const HeroSection = () => {
     "https://docs.google.com/document/d/1hqtxe9iwii7zzBRzDM2pcIcLoOrOCCOS2TB6IGXLhEc/edit?usp=drive_link";
 
   return (
-    <section className="h-screen flex items-center lg:pt-24"> {/* Adjust top padding here */}
+    <section className="h-screen flex items-center lg:pt-24 sm:pt-16"> {/* Adjust top padding here */}
       <div className="lg:ml-12 grid grid-cols-1 sm:grid-cols-12 mx-auto w-full">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-8 place-self-center text-center sm:text-left justify-self-start px-4 sm:px-8 lg:px-20 mt-8 sm:mt-0" {/* Add margin-top here */}
+          className="col-span-8 place-self-center text-center sm:text-left justify-self-start px-4 sm:px-8 lg:px-20 mt-8 sm:mt-0" // Add margin-top here
         >
           <div style={{ height: "175px", overflow: "hidden" }}>
             <h1 className="text-white mb-4 text-3xl sm:text-4xl lg:text-6xl lg:leading-normal font-extrabold">
