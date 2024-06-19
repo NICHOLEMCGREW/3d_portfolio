@@ -41,10 +41,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled full-stack developer with expertise in JavaScript, and experience in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I am a skilled full-stack developer with a background in finance and operations, where I gained my love for process improvement, data management, and bridging the gap between business and technology. I specialize in JavaScript and have experience in a variety of technologies and frameworks like React, Next.js Node.js, and Three.js. I am known for my quick learning ability and collaborative approach to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
