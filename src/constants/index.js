@@ -220,8 +220,8 @@ const projects = [
   },
   
   {
-    name: "React Jobs Portal",
-    description: "Developed a dynamic and responsive job listing frontend application using React. Features include fetching job listings from a external API, a component-based architecture, robust state management for user interactions, and a fully responsive design for seamless usability across desktops, tablets, and mobile devices.",
+    name: "Modern Web Design Project",
+    description: "A dynamic and responsive web application featuring sleek parallax effects and bento box layouts using React and Tailwind CSS. The project emphasizes a stylish UI design and mobile-first principles, enhancing user experience and ensuring seamless usability across all devices.",
     tags: [
       {
         name: "react",
@@ -232,21 +232,13 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
-        name: "api",
-        color: "orange-text-gradient",
+        name: "parallax",
+        color: "purple-text-gradient",
       },
-      // {
-      //   name: "express",
-      //   color: "green-text-gradient",
-      // },
-      // {
-      //   name: "node",
-      //   color: "pink-text-gradient",
-      // },
-      // {
-      //   name: "typescript",
-      //   color: "green-text-gradient",
-      // }
+      {
+        name: "responsive",
+        color: "green-text-gradient",
+      }
     ],
     image: brainwave,
     links: {
