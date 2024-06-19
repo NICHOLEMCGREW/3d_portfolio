@@ -181,7 +181,7 @@ const projects = [
   },
   {
     "name": "Admin Dashboard",
-    "description": "Built a responsive admin dashboard with Next.js and React. Features dynamic data visualization, robust state management, and responsive design. Utilized Shadcn/ui, React Hook Form, and Zod for modern UI and form validation.",
+    "description": "A responsive admin dashboard with Next.js and React. Features dynamic data visualization, robust state management, and responsive design. Utilized Shadcn/ui, React Hook Form, and Zod for modern UI and form validation.",
     "tags": [
       {
         "name": "next.js",
@@ -220,7 +220,7 @@ const projects = [
   },
   
   {
-    name: "Modern Web Design Project",
+    name: "UI/UX Website",
     description: "A dynamic and responsive web application featuring sleek parallax effects and bento box layouts using React and Tailwind CSS. The project emphasizes a stylish UI design and mobile-first principles, enhancing user experience and ensuring seamless usability across all devices.",
     tags: [
       {
