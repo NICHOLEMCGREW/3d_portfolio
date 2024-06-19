@@ -3,7 +3,7 @@ import LinkButton from "./LinkButton";
 import DownloadCVButton from "./DownloadCVButton";
 import Image from "../assets/img/hero.png";
 
-const HeroSection = () => {
+const Hero= () => {
   return (
     <section className="h-screen flex items-center lg:pt-24 sm:pt-16">
       <div className="lg:ml-12 grid grid-cols-1 sm:grid-cols-12 mx-auto w-full">
@@ -12,7 +12,7 @@ const HeroSection = () => {
           <div>
             <HeroTitle />
           </div>
-          <p className="text-[#ADB7BE] text-base sm:text-lg pt-6 pb-3 sm:pb-6 md:pb-6 lg:text-xl">
+          <p className="text-[#ADB7BE] text-base sm:text-lg pt-6 pb-4 sm:pb-6 md:pb-6 lg:text-xl">
             Curious, Creative, Problem Solver, Collaborator, Craftsman, Teacher,
             Student.
           </p>
@@ -37,4 +37,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;
