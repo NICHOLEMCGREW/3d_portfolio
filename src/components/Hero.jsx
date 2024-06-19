@@ -14,11 +14,11 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-8 place-self-center text-center sm:text-left justify-self-start px-4 sm:px-8 lg:px-20 mt-8 sm:mt-0" // Add margin-top here
+          className="col-span-8 place-self-center text-center sm:text-left justify-self-start px-4 sm:px-8 lg:px-20 mt-4 md:mt-0 sm:mt-0" // Add margin-top here
         >
           <div style={{ height: "175px", overflow: "hidden" }}>
-            <h1 className="text-white mt-6 md:mt-10 sm:mt-8 mb-4 text-3xl sm:text-4xl lg:text-6xl lg:leading-normal font-extrabold">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mt-4 md:mt-0">
+            <h1 className="text-white text-3xl sm:text-4xl lg:text-6xl lg:leading-normal font-extrabold">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
                 Hello, I'm Nichole{" "}
               </span>
               <br />
