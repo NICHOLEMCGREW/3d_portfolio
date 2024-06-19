@@ -25,8 +25,9 @@ import {
   // tripguide,
   threejs,
   // comingsoon,
-  jobsPortal,
+  // jobsPortal,
   adminDash,
+  brainwave,
   // techProducts,
   // coverImage, // Use the named import here
 } from "../assets";
@@ -247,10 +248,10 @@ const projects = [
       //   color: "green-text-gradient",
       // }
     ],
-    image: jobsPortal,
+    image: brainwave,
     links: {
-      source_code: "https://github.com/nicholemcgrew/react-jobs-portal",
-      source_deploy: "https://sparkly-vacherin-8aa98b.netlify.app/jobs"
+      source_code: "https://github.com/nicholemcgrew/connected",
+      source_deploy: "https://connected-link.netlify.app/"
     }
   },
   // {

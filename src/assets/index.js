@@ -30,9 +30,10 @@ import threejs from "./tech/threejs.svg";
 // import starbucks from "./company/starbucks.png";
 // import tesla from "./company/tesla.png";
 import comingsoon from './project_coming_soon.png'
-import jobsPortal from './jobs-portal.png'
+// import jobsPortal from './jobs-portal.png'
 import adminDash from './adminDash.png'
 // import techProducts from '../assets/product-filter.png'
+import brainwave from '../assets/brainwave.png'
 import scouts from './scouts.png'
 import vivagusta from './vivagusta.png'
 import zenzest from "./zenzest.png";
@@ -71,9 +72,10 @@ export {
   // carrent,
   scouts,
   comingsoon,
-  jobsPortal,
+  // jobsPortal,
   adminDash,
   // techProducts,
+  brainwave,
   vivagusta,
   zenzest,
   // jobit,
