@@ -12,7 +12,7 @@ const HeroSection = () => {
 					<div>
 						<HeroTitle />
 					</div>
-					<p className="text-[#ADB7BE] text-base sm:text-lg pt-6 sm:pb-6 md:pb-6 lg:text-xl">
+					<p className="text-[#ADB7BE] text-base sm:text-lg pt-6 pb-3 sm:pb-6 md:pb-6 lg:text-xl">
 						Curious, Creative, Problem Solver, Collaborator, Craftsman, Teacher,
 						Student.
 					</p>
