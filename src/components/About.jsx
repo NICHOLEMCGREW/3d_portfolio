@@ -34,7 +34,7 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         {/* <p className={styles.sectionSubText}>Introduction</p> */}
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>About Me.</h2>
       </motion.div>
 
       <motion.p
@@ -44,11 +44,11 @@ const About = () => {
         I am a skilled full-stack developer with a background in finance and operations, where I gained my love for process improvement, data management, and bridging the gap between business and technology. I specialize in JavaScript and have experience in a variety of technologies and frameworks like React, Next.js Node.js, and Three.js. I am known for my quick learning ability and collaborative approach to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      {/* <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </div>
+      </div> */}
     </>
   );
 };
