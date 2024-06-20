@@ -25,16 +25,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`py-6 bg-[#181818] w-full flex items-center fixed top-0 z-20 ${scrolled ? "bg-opacity-0" : "border-none"}`}>
+    <nav className={`py-6 bg-opacity-100 bg-[#121212] w-full flex items-center fixed top-0 z-20 ${scrolled ? "bg-opacity-100" : "border-none"}`}>
       <div className="w-full max-w-7xl mx-auto flex justify-between items-center px-6 sm:px-16">
         <Link to="/" className="flex items-center gap-2" onClick={() => { setActive(""); window.scrollTo(0, 0); }}>
           <img src={logo} alt="logo" className="w-11 h-11 object-contain" />
-          {scrolled && (
-            <p className="text-white text-18px font-bold cursor-pointer flex">
-              Nichole &nbsp;
-              <span className="sm:block">McGrew</span>
-            </p>
-          )}
+          <p className="text-white text-18px font-bold cursor-pointer flex">
+            Nichole &nbsp;
+            <span className="sm:block">McGrew</span>
+          </p>
         </Link>
 
         <ul className="hidden md:flex flex-row gap-10 ml-auto text-white text-opacity-70 tracking-0.8px text-18px">
