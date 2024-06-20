@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="w-full max-w-7xl mx-auto flex justify-between items-center px-6 sm:px-16">
         <Link to="/" className="flex items-center gap-2" onClick={() => { setActive(""); window.scrollTo(0, 0); }}>
           <img src={logo} alt="logo" className="w-11 h-11 object-contain" />
-          <p className="text-white text-18px font-bold cursor-pointer flex">
+          <p className={`text-white text-18px font-bold cursor-pointer flex ${scrolled ? "block" : "hidden"}`}>
             Nichole &nbsp;
             <span className="sm:block">McGrew</span>
           </p>
