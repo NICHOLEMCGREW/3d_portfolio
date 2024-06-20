@@ -1,5 +1,3 @@
-import React from "react";
-
 import { SectionWrapper } from "../hoc";
 import { socials } from "../constants";
 

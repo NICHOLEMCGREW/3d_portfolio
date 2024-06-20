@@ -33,9 +33,8 @@ const ProjectCard = ({
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <div className="project-card" onClick={handleCardClick}>
-        <div
-          className="relative p-5 rounded-2xl h-[530px] sm:w-[360px] w-full border-2 border-gradient cursor-pointer"
-        >
+      <div className="relative p-5 rounded-2xl sm:w-[360px] w-full border-2 border-gradient cursor-pointer flex flex-col">
+
           <div className="w-full h-[230px]">
             <img
               src={image}
