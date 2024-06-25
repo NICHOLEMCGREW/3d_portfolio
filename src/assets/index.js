@@ -71,7 +71,6 @@ export {
   // starbucks,
   // tesla,
   // carrent,
-  // scouts,
   movieApp,
   comingsoon,
   // jobsPortal,
