@@ -166,12 +166,16 @@ const projects = [
     "description": "A movie application built using TypeScript, React, and Material UI. This project demonstrates the use of Context API for sharing data between components and useReducer hooks for state management. The focus is on building an engaging and functional UI with Material UI and leveraging TypeScript for improved code readability and maintainability.",
     "tags": [
       {
-        "name": "typescript",
-        "color": "blue-text-gradient"
-      },
-      {
         "name": "react",
         "color": "pink-text-gradient"
+      },
+      {
+        "name": "vite",
+        "color": "yellow-text-gradient"
+      },
+      {
+        "name": "typescript",
+        "color": "blue-text-gradient"
       },
       {
         "name": "material-ui",
