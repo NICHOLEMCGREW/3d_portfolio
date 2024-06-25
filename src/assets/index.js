@@ -34,7 +34,8 @@ import comingsoon from './project_coming_soon.png'
 import adminDash from './adminDash.png'
 // import techProducts from '../assets/product-filter.png'
 import brainwave from '../assets/brainwave.png'
-import scouts from './scouts.png'
+import movieApp from './movieApp.png'
+// import scouts from './scouts.png'
 import vivagusta from './vivagusta.png'
 import zenzest from "./zenzest.png";
 // import jobit from "./jobit.png";
@@ -70,7 +71,8 @@ export {
   // starbucks,
   // tesla,
   // carrent,
-  scouts,
+  // scouts,
+  movieApp,
   comingsoon,
   // jobsPortal,
   adminDash,

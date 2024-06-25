@@ -18,7 +18,8 @@ import {
   figma,
   // docker,
   // carrent,
-  scouts,
+  // scouts,
+  movieApp,
   // vivagusta,
   // zenzest,
   // jobit,
@@ -161,21 +162,25 @@ const skills = [
 
 const projects = [
   {
-    name: "Cub Scouts",
-    description: "An engaging landing page designed to introduce Cub Scouting to prospective members and their families. Discover the exciting world of Cub Scouting, learn about activities, and stay updated with upcoming events and activities.",
-    tags: [
+    "name": "Movie App",
+    "description": "A movie application built using TypeScript, React, and Material UI. This project demonstrates the use of Context API for sharing data between components and useReducer hooks for state management. The focus is on building an engaging and functional UI with Material UI and leveraging TypeScript for improved code readability and maintainability.",
+    "tags": [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        "name": "typescript",
+        "color": "blue-text-gradient"
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        "name": "react",
+        "color": "pink-text-gradient"
       },
+      {
+        "name": "material-ui",
+        "color": "green-text-gradient"
+      }
     ],
-    image: scouts,
+    image: movieApp,
     links: {
-      source_code: "https://github.com/nicholemcgrew/cub-scouts-365",
+      source_code: "https://github.com/nicholemcgrew/react-movie-app",
       source_deploy: "https://cub-scouts-pack-365.netlify.app"
     }
   },
