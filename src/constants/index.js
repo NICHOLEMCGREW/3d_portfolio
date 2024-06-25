@@ -181,7 +181,7 @@ const projects = [
     image: movieApp,
     links: {
       source_code: "https://github.com/nicholemcgrew/react-movie-app",
-      source_deploy: "https://cub-scouts-pack-365.netlify.app"
+      source_deploy: "https://beautiful-brioche-e1e41f.netlify.app/"
     }
   },
   {
